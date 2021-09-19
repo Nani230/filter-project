@@ -26608,6 +26608,9 @@ document.getElementById(
 
 let viewheros = (id) => {
     document.getElementById("modal-parent").style.visibility = "visible";
+    document.getElementById("modal-parent").style.opacity = "1";
+    document.getElementById("modal").style.transform = "translateY(0)";
+
     let superhero = heros.find((suprheroid) => {
         return suprheroid.id === id;
     });
@@ -26654,6 +26657,8 @@ let viewheros = (id) => {
 
 let cancelmodal = () => {
     document.getElementById("modal-parent").style.visibility = "hidden";
+    document.getElementById("modal-parent").style.opacity = "0";
+    document.getElementById("modal").style.transform = " translateY(-30vh)";
 };
 let start = 0;
 let pagecount = 1;
