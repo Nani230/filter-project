@@ -2,6 +2,17 @@
     margin: 0px;
     padding: 0px;
 }
+.mobilehero {
+    visibility: hidden;
+}
+.sortings {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
 /* css for modal */
 
@@ -24,7 +35,6 @@
     border-radius: 10px;
     background-color: white;
     display: flex;
-    overflow: hidden;
     transition: 0.5s;
     transform: translateY(-30vh);
 }

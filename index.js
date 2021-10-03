@@ -26713,14 +26713,14 @@ let display = (superarray) => {
 
                     <div class="powerstates">
                         <div class="ps-details">
-                            <p>Intelligence : ${details.powerstats.intelligence} </p>
+                            <p>Intelligence : ${details.powerstats.intelligence}%</p>
                             <div class="power-bg">
                                 <div class="power-fg" style='width : ${details.powerstats.intelligence}%;'>  </div>
                             </div>
                         </div>
 
                         <div class="ps-details">
-                            <p>Strength: ${details.powerstats.strength} </p>
+                            <p>Strength: ${details.powerstats.strength}%</p>
                             <div class="power-bg">
                                 <div class="power-fg" style='width : ${details.powerstats.strength}%;'>  </div>
                             </div>
@@ -26728,7 +26728,7 @@ let display = (superarray) => {
 
 
                         <div class="ps-details">
-                            <p>Speed : ${details.powerstats.speed} </p>
+                            <p>Speed : ${details.powerstats.speed}%</p>
                             <div class="power-bg">
                                 <div class="power-fg" style='width : ${details.powerstats.speed}%;'>  </div>
                             </div>
@@ -26736,7 +26736,7 @@ let display = (superarray) => {
 
 
                         <div class="ps-details">
-                            <p>durability : ${details.powerstats.durability} </p>
+                            <p>durability : ${details.powerstats.durability}% </p>
                             <div class="power-bg">
                                 <div class="power-fg" style='width : ${details.powerstats.durability}%;'>  </div>
                             </div>
@@ -26745,14 +26745,14 @@ let display = (superarray) => {
 
 
                         <div class="ps-details">
-                            <p>power : ${details.powerstats.power} </p>
+                            <p>power : ${details.powerstats.power}% </p>
                             <div class="power-bg">
                                 <div class="power-fg" style='width : ${details.powerstats.power}%;'>  </div>
                             </div>
                         </div>
 
                         <div class="ps-details">
-                            <p>combat : ${details.powerstats.combat} </p>
+                            <p>combat : ${details.powerstats.combat}% </p>
                             <div class="power-bg">
                                 <div class="power-fg" style='width : ${details.powerstats.combat}%;'>  </div>
                             </div>
@@ -26820,8 +26820,6 @@ let filters = {
     minCombat: { active: false, value: "" },
     maxCombat: { active: false, value: "" },
 };
-
-console.log(filters);
 
 let selectfilter = (filtername, value) => {
     start = 0;

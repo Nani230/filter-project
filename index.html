@@ -6,6 +6,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./mobile.css" />
         <title>Document</title>
     </head>
     <body>
@@ -29,7 +30,7 @@
                         >
                             <h1 id="hero-name">Blade</h1>
                             <button
-                                class="glow-on-hover"
+                                class="glow-on-hover canclebtn"
                                 onclick="cancelmodal()"
                             >
                                 close
@@ -242,6 +243,7 @@
         </div>
 
         <div class="main">
+            <h1 class="mobilehero">All Super Heros</h1>
             <div class="container">
                 <form id="filter-form">
                     <div class="filters">
@@ -420,16 +422,7 @@
                         "
                     />
 
-                    <div
-                        style="
-                            display: flex;
-                            align-items: center;
-                            width: 50%;
-                            justify-content: space-between;
-                            margin-top: 20px;
-                            margin-bottom: 30px;
-                        "
-                    >
+                    <div class="sortings">
                         <div class="min">
                             <label>Select Sorting Property </label>
                             <select
@@ -463,7 +456,10 @@
                         </div>
                     </div>
                 </form>
-                <div style="display: flex; justify-content: space-between">
+                <div
+                    class="allsuperheros"
+                    style="display: flex; justify-content: space-between"
+                >
                     <h1>
                         All Superheroes (<span id="current"></span><br />
                         <span id="count"> 1</span>)
